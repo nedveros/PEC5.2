@@ -1,0 +1,97 @@
+<div>
+
+
+    <div *ngIf="movie">
+
+
+
+
+        <div class="center">
+
+
+            <mat-card class="example-card">
+                <mat-card-header>
+
+                    <mat-card-header>
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-card-title>{{movie.title}}</mat-card-title>
+                        <mat-card-subtitle>{{movie.director}}</mat-card-subtitle>
+
+                    </mat-card-header>
+
+                    <mat-card-header>
+                        <button class="boton" mat-raised-button color="primary"><a routerLink="/">Back</a></button>
+
+
+                    </mat-card-header>
+
+
+                </mat-card-header>
+                <img mat-card-image src="{{movie.image}}" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                    <h2>Description:</h2>
+                    <p>
+                        {{movie.description}}
+                    </p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <div *ngIf="details==false">
+
+                        <button mat-button (click)="changeDetails($event)"> Show all details</button>
+
+                    </div>
+
+                    <div *ngIf="details == true">
+
+                        <button mat-button (click)="changeDetails($event)">Hide all details</button>
+
+
+                        <mat-tab-group animationDuration="0ms">
+                            <mat-tab label="Produccer">{{movie.producer}}</mat-tab>
+                            <mat-tab label="Release date:">{{movie.release_date}}</mat-tab>
+
+                        </mat-tab-group>
+                        <mat-tab-group animationDuration="0ms">
+                            <mat-tab label="Original title">{{movie.original_title}}</mat-tab>
+                            <mat-tab label="Running time">{{movie.running_time}}</mat-tab>
+
+                        </mat-tab-group>
+
+
+
+
+                    </div>
+                </mat-card-actions>
+            </mat-card>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+</div>

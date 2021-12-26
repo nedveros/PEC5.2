@@ -1,0 +1,96 @@
+{
+  "configVersion": 1,
+  "timestamp": 1640551775741,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.bc2a86cef0442bf8.js",
+        "/manifest.webmanifest",
+        "/polyfills.fc59825eb4fb75a1.js",
+        "/runtime.658cbae412743ef2.js",
+        "/styles.fe020c80ddc0599e.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/css/animate.css",
+        "/assets/icons/192.png",
+        "/assets/icons/256.png",
+        "/assets/icons/384.png",
+        "/assets/icons/512.png",
+        "/assets/icons/pngegg.png",
+        "/assets/icons/studio.png",
+        "/pngegg.734cb998ff7cadca.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "Studio Ghibli api",
+      "patterns": [
+        "https:\\/\\/ghibliapi\\.herokuapp\\.com\\/films\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 20,
+      "maxAge": 3600000,
+      "timeoutMs": 1000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/assets/css/animate.css": "349a5d35c44a0ed441dcda8a1e36ecd0835ad9a5",
+    "/assets/icons/192.png": "060649794f87739158f2d9a948f3bc79b212fd9c",
+    "/assets/icons/256.png": "e58df3a07006beb1e75d770f321677dc51f000a0",
+    "/assets/icons/384.png": "4f47060e180455c1c5a4add35dfe5ec7d838743f",
+    "/assets/icons/512.png": "5aa023f13ad89cff1b93055e4f40b32a43e8be58",
+    "/assets/icons/pngegg.png": "e445128bc0c6f3b4fb2a1d080f95b8c6c9f9eec1",
+    "/assets/icons/studio.png": "0d5e23a30b59ac074105dc2ead0c8a05906fbdb0",
+    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/index.html": "49b28ba010832fc7b70304d6bf40819211be3c0e",
+    "/main.bc2a86cef0442bf8.js": "766240d7c918760de02dc7e02c822146515cdce8",
+    "/manifest.webmanifest": "5628d5516cc65959baeff9c28c4d60a6fd3b0928",
+    "/pngegg.734cb998ff7cadca.png": "e445128bc0c6f3b4fb2a1d080f95b8c6c9f9eec1",
+    "/polyfills.fc59825eb4fb75a1.js": "77edd995113ac41d6761ccbc7ea1ea8d7ec808ed",
+    "/runtime.658cbae412743ef2.js": "5e83c033cd68b994fd64bced28adc9dd708e8b05",
+    "/styles.fe020c80ddc0599e.css": "cdb8130769a2151769c83212baa704c9eef1abb3"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}

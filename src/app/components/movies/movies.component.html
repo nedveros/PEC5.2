@@ -1,0 +1,56 @@
+<div class="center">
+    <h1>Studio Ghibli</h1>
+
+
+
+
+
+    <div *ngIf="load">
+
+
+
+
+
+        <ul *ngFor="let movie of movies" [routerLink]="['/movie',movie.id]">
+
+
+
+
+            <mat-card><img src="../../../assets/icons/studio.png" alt="" idth="50" height="50"> {{movie.title}}</mat-card>
+
+
+
+
+        </ul>
+
+
+
+
+    </div>
+
+    <div class="overlay" *ngIf="!load">
+
+
+        <img src="https://c.tenor.com/NHuzZkXIv9YAAAAC/my-neighbor-totoro-studio-ghibli.gif" />
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
